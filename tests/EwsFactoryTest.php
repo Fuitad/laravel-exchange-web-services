@@ -22,6 +22,7 @@ class EwsFactoryTest extends AbstractTestCase
         $return = $factory->make([
             'username' => 'email@account.com',
             'password' => 'password123',
+            'delegate' => null,
             'url' => 'https://mail.myserver.com/EWS/',
         ]);
 
@@ -37,6 +38,7 @@ class EwsFactoryTest extends AbstractTestCase
 
         $factory->make([
             'password' => 'password123',
+            'delegate' => null,
             'url' => 'https://mail.myserver.com/EWS/',
         ]);
     }
@@ -50,6 +52,7 @@ class EwsFactoryTest extends AbstractTestCase
 
         $factory->make([
             'username' => 'email@account.com',
+            'delegate' => null,
             'url' => 'https://mail.myserver.com/EWS/',
         ]);
     }
@@ -64,6 +67,7 @@ class EwsFactoryTest extends AbstractTestCase
         $factory->make([
             'username' => 'email@account.com',
             'password' => 'password123',
+            'delegate' => null,
         ]);
     }
 

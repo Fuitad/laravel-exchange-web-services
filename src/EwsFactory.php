@@ -42,6 +42,7 @@ class EwsFactory
         $keys = [
             'username',
             'password',
+            'delegate',
             'url',
         ];
         foreach ($keys as $key) {
@@ -53,7 +54,7 @@ class EwsFactory
     }
 
     /**
-     * Get the pusher client.
+     * Get the ExchangeClient client.
      *
      * @param string[] $config
      *
