@@ -1,6 +1,8 @@
 {
     "name": "fuitad/laravel-exchange-web-services",
     "description": "Exchange Web Services bridge for Laravel 5",
+    "license": "MIT",
+    "keywords": ["laravel", "exchange", "ews", "exchange-web-services", "email" ],    
     "authors": [
         {
             "name": "Pierre-Luc Brunet",
@@ -9,11 +11,24 @@
     ],
     "require": {
     	"php": ">=5.4.0",
-        "fuitad/exchange-web-services-for-php": "~1.0.*"
+        "fuitad/exchange-web-services-for-php": "1.0.*",
+        "graham-campbell/manager": "^2.0",
+        "illuminate/contracts": "5.1.* || 5.2.*",
+        "illuminate/support": "5.1.* || 5.2.*"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^3.1",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.8 || ^5.0"
     },
     "autoload": {
         "psr-4": {
             "EwsBridge\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EwsBridge\\Tests\\": "tests/"
         }
     }
 }
