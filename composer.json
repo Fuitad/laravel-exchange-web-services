@@ -1,0 +1,20 @@
+{
+    "name": "fuitad/laravel-exchange-web-services",
+    "description": "Exchange Web Services bridge for Laravel 5",
+    "authors": [
+        {
+            "name": "Pierre-Luc Brunet",
+            "email": "fuitad@gmail.com"
+        }
+    ],
+    "require": {
+    	"php": ">=5.4.0",
+        "fuitad/exchange-web-services-for-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "EwsBridge\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
