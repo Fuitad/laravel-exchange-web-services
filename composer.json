@@ -15,6 +15,5 @@
         "psr-4": {
             "EwsBridge\\": "src"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
