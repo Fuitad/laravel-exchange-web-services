@@ -40,11 +40,19 @@ Most of the config values are fetch from your .env file so you'll want to add th
 ```
 EWS_USERNAME=email@account.com OR domain\username
 EWS_PASSWORD=password123
-EWS_URL=https://mail.myserver.com/EWS/
+EWS_URL=https://mail.myserver.com/EWS/Services.wsdl
 ```
+
+Your URL must link to the wsdl file on your EWS server, otherwise, it won't work!
 
 If you need to log into a delegate account, you'll also need to add the following variable:
 
 ```
 EWS_DELEGATE=delegatemailbox@account.com
+```
+
+## Usage
+
+```php
+$messages = ExchangeWebServices::get_messages(5);
 ```

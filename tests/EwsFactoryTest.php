@@ -23,7 +23,7 @@ class EwsFactoryTest extends AbstractTestCase
             'username' => 'email@account.com',
             'password' => 'password123',
             'delegate' => null,
-            'url' => 'https://mail.myserver.com/EWS/',
+            'url' => 'https://mail.myserver.com/EWS/Services.wsdl',
         ]);
 
         $this->assertInstanceOf(ExchangeClient::class, $return);
@@ -39,7 +39,7 @@ class EwsFactoryTest extends AbstractTestCase
         $factory->make([
             'password' => 'password123',
             'delegate' => null,
-            'url' => 'https://mail.myserver.com/EWS/',
+            'url' => 'https://mail.myserver.com/EWS/Services.wsdl',
         ]);
     }
 
@@ -53,7 +53,7 @@ class EwsFactoryTest extends AbstractTestCase
         $factory->make([
             'username' => 'email@account.com',
             'delegate' => null,
-            'url' => 'https://mail.myserver.com/EWS/',
+            'url' => 'https://mail.myserver.com/EWS/Services.wsdl',
         ]);
     }
 
